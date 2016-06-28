@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Book a Visit - Catitude</title>
+        <meta name="keywords" content="Cat, Cat Behaviour, Catitude">
+        <meta name="description" content="Catitude - A better way to know your cat.">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/fixed_nav.js" type="text/javascript"></script>
+        <script src="js/form_valid.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Catitude Logo"></a> 
+                    </div>
+                    <div id="header_info">
+                        <a href="http://facebook.com"><img src="images/facebook_icon.png" alt="Catitude facebook page"></a> 
+                        &nbsp;
+                        <a href="http://twitter.com"><img src="images/twitter_icon.png" alt="Catitude twitter page"></a>
+                        <p>Phone: 07 3412 1808</p>
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="symp01.html">Cat Symptoms</a>
+                                <ul id="symptom_list">
+                                    <li><p>&nbsp;&nbsp;Common Behaviour</p></li>
+                                    <li><a href="symp01.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burying Poo</a></li>
+                                    <li><a href="symp02.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ear Positioning</a></li>
+                                    <li><a href="symp03.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flehmening</a></li>
+                                    <li><a href="symp04.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kneading</a></li>
+                                    <li><a href="symp05.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Licking</a></li>
+                                    <li><a href="symp06.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nipping &amp; Biting</a></li>
+                                    <li><a href="symp07.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rubbing</a></li>
+                                    <li><a href="symp08.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scratching</a></li>
+                                    <li><a href="symp09.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submissive Poses</a></li>
+                                    <li><a href="symp10.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yawning &amp; Sleeping</a></li>
+                                    <li><p>&nbsp;&nbsp;Cat Diet</p></li>
+                                    <li><a href="symp11.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Diet</a></li>
+                                    <li><a href="symp12.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Drinks</a></li>
+                                    <li><a href="symp13.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Treats</a></li>
+                                    <li><a href="symp14.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overweight Cats</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="profile01.html">Cat Profiles</a>
+                                <ul id="profile_list">
+                                    <li><a href="profile01.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luna</a></li>
+                                    <li><a href="profile02.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miu-Miu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li class="selected"><a href="booking.html">Book a Visit</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">
+
+                    <div id="page"> 
+                        <section id="booking">
+                            <article>
+                                <div class="inner">
+                                    <h1>Book a Visit</h1>
+                                    <p>In order to provide the best services for you and your cat, we strongly recommend that you make a booking before you visit us.</p>
+                                    <p><strong>For all customers, book now and you will get a 10-minute consultation for FREE!</strong></p>
+                                    <p>Fields labeled with "*" are compulsory.</p>
+                                    <form method="get" action="form.php" id="booking_form">
+                                        <fieldset>
+                                            <p>
+                                                <label for="fname">First Name: </label>
+                                                <br>
+                                                <input type="text" id="fname" name="fname"/>
+                                            </p>
+                                            <p>
+                                                <label for="lname">Last Name*: </label>
+                                                <br>
+                                                <input type="text" id="lname" name="lname" onclick="changeColor(this);"/>
+                                            </p>
+                                            <p>
+                                                <label for="prefix">Prefix*: </label>
+                                                <br>
+                                                <select id="prefix" name="prefix" onclick="changeColor(this);">
+                                                    <option value="0">Please select a prefix</option>
+                                                    <option value="1">Ms.</option>
+                                                    <option value="2">Mrs.</option>
+                                                    <option value="3">Miss.</option>
+                                                    <option value="4">Mr.</option>
+                                                </select>		
+                                            </p>                                                
+                                            <p>
+                                                <label for="phone">Phone: </label>
+                                                <br>
+                                                <input type="text" id="phone" name="phone"/>			
+                                            </p>
+                                            <p>
+                                                <label for="email">Email*: </label>
+                                                <br>
+                                                <input type="text" id="email" name="email" onclick="changeColor(this);"/>				
+                                            </p>
+                                            <p>
+                                                <label for="catname">Cat's Name: </label>
+                                                <br>
+                                                <input type="text" id="catname" name="catname"/>			
+                                            </p>                                                
+                                            <p>
+                                                <label for="catage">Cat's Age: </label>
+                                                <br>
+                                                <input type="text" id="catage" name="catage"/>			
+                                            </p>  
+                                            <p>
+                                                <label for="catbreed">Cat's Breed: </label>
+                                                <br>
+                                                <input type="text" id="catbreed" name="catbreed"/>				
+                                            </p>                            
+                                            <p>
+                                                <label for="visittype">Visit Type*: </label>
+                                                <br>
+                                                <select id="visittype" name="visittype" onclick="changeColor(this);">
+                                                    <option value="0">Please select a visit type</option>
+                                                    <option value="1">General Enquiry</option>
+                                                    <option value="2">Common Behaviours</option>
+                                                    <option value="3">Abnormal Behaviours</option>
+                                                    <option value="4">Cat Diet</option>
+                                                    <option value="5">Mental Health</option>
+                                                    <option value="6">Cat-owner Relationship</option>
+                                                </select>
+                                            </p>                                                
+                                            <p>
+                                                <label for="description">Symptom/Problem Description: </label>
+                                                <br>
+                                                <textarea id="description" name="description"></textarea>
+                                            </p>
+                                            <p>
+                                                <label for="visitdate">Preferred Visit Date*: </label>
+                                                <br>
+                                                <input type="text" id="visitdate" name="visitdate" onclick="changeColor(this);"/>			
+                                            </p>  
+                                            <p>
+                                                <label for="visittime">Preferred Visit Time*: </label>
+                                                <br>
+                                                <input type="text" id="visittime" name="visittime" onclick="changeColor(this);"/>			
+                                            </p>
+                                        </fieldset>
+                                    </form>
+                                    <p class="notice">Note: Our free 10-minute consultation is a one-off per customer session that mast need to be booked ahead of time. 
+    Any additional sessions with us will be flexible and based around the needs of the individual cat. Cost will be discussed with clients at a consultation.</p>
+                                    <p class="notice">When your booking is successful, you will receive a confirmation e-mail. Please allow 2 working days for us to proceed with your booking.</p>
+                                    <p class="notice">By clicking the "Submit" button, you agree with the above restrictions and our service policy.</p>
+                                    <p id="feedback"> </p>
+                                <button onclick="formValidation();">Submit</button>
+                                </div>
+                            </article>
+                        </section> 
+                    </div> 
+                    <div id="clearfloat"></div>
+                </div>      <!--main section-->
+            </div>
+            <footer>
+                <div id="footer_left">
+                    <p><strong>@ 2015 Catitude & Jackson Supernova</strong></p>
+                    <p>Address: 3 Zamia St Sunnybank, QLD 4109</p>
+                    <p>Phone: 07 3412 1808&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: supernova@catitude.com</p>
+                </div>
+                <div id="footer_right">
+
+                    <p>Social Network: <a href="http://facebook.com">Facebook</a> <a href="http://twitter.com">Twitter</a></p>
+                    <p>Website Last Update: 21-05-2015</p>
+                    </div>                
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!--In order to avoid invalid booking information submissions, form_valid.js JavaScript is used for verify user's input in booking form. If all compulsory fields are filled, it will display a confirmation message in blue and clear all input data, or it will display alert message in red and highlight incomplete fields with red background colour. changeColor() function will reset background colour back to white when user click the input field.-->

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Miu Miu - Catitude</title>
+        <meta name="keywords" content="Cat, Cat Behaviour, Catitude">
+        <meta name="description" content="Catitude - A better way to know your cat.">
+        <meta charset="UTF-8">
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/fixed_nav.js" type="text/javascript"></script>
+        <script src="js/gallery.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div id="content">                      <!--locate footer when main content height is less than viewport height-->
+            <div id="main">                     <!--locate footer-->
+                <header>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Catitude Logo"></a> 
+                    </div>
+                    <div id="header_info">
+                        <a href="http://facebook.com"><img src="images/facebook_icon.png" alt="Catitude facebook page"></a> 
+                        &nbsp;
+                        <a href="http://twitter.com"><img src="images/twitter_icon.png" alt="Catitude twitter page"></a>
+                        <p>Phone: 07 3412 1808</p>
+                    </div>
+                </header>
+                <nav>
+                    <div id="navbar">
+                        <div id="navlist">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="symp01.html">Cat Symptoms</a>
+                                <ul id="symptom_list">
+                                    <li><p>&nbsp;&nbsp;Common Behaviour</p></li>
+                                    <li><a href="symp01.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burying Poo</a></li>
+                                    <li><a href="symp02.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ear Positioning</a></li>
+                                    <li><a href="symp03.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flehmening</a></li>
+                                    <li><a href="symp04.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kneading</a></li>
+                                    <li><a href="symp05.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Licking</a></li>
+                                    <li><a href="symp06.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nipping &amp; Biting</a></li>
+                                    <li><a href="symp07.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rubbing</a></li>
+                                    <li><a href="symp08.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scratching</a></li>
+                                    <li><a href="symp09.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submissive Poses</a></li>
+                                    <li><a href="symp10.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yawning &amp; Sleeping</a></li>
+                                    <li><p>&nbsp;&nbsp;Cat Diet</p></li>
+                                    <li><a href="symp11.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Diet</a></li>
+                                    <li><a href="symp12.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Drinks</a></li>
+                                    <li><a href="symp13.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cat Treats</a></li>
+                                    <li><a href="symp14.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overweight Cats</a></li>
+                                </ul>
+                            </li>
+                            <li class="selected"><a href="profile01.html">Cat Profiles</a>
+                                <ul id="profile_list">
+                                    <li><a href="profile01.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luna</a></li>
+                                    <li><a href="profile02.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miu Miu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="booking.html">Book a Visit</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                <div id="frame">
+                        <div id="sidebar">
+                            <h1>Cat Profiles</h1>
+
+                    
+                            <ul id="symptom_list">
+                                <li class="sub"><p>&nbsp;&nbsp;Cat Clients</p></li>
+                                <li><a href="profile01.html">&nbsp;&nbsp;&nbsp;&nbsp;Luna</a></li>
+                                <li class="selected"><a href="profile02.html">&nbsp;&nbsp;&nbsp;&nbsp;Miu-Miu</a></li>
+                            </ul>
+                        </div>
+                        <div id="sidepage">
+                            <section id="site_position">
+                                <p class="position">Catitude > Cat Profiles > Miu Miu</p>
+                            </section>
+                            <h2>Miu Miu</h2>
+                            
+                            <section id="gallery">
+                                <div id="gallery2">
+                                    <div id=previous onclick="miumiuPrevious();">&lt;</div>
+                                    <div id=next onclick="miumiuNext();">&gt;</div>
+                                </div>
+                                <div id="thumb2">
+                                <img src="images/MiuMiu_1.jpg" alt="Miu Miu picture 1" onclick="miumiuClick1();">
+                                <img src="images/MiuMiu_2.jpg" alt="Miu Miu picture 2" onclick="miumiuClick2();">
+                                <img src="images/MiuMiu_3.jpg" alt="Miu Miu picture 3" onclick="miumiuClick3();">
+                                <img src="images/MiuMiu_4.jpg" alt="Miu Miu picture 4" onclick="miumiuClick4();">
+                                <div id="clearfloat"></div>
+                                </div>
+                            </section>
+                            <section id="symptom">
+                                <p>Miu Miu is one of the more friendly cats we have coming through Catitude. He loves to wander around and put himself on display, adoring all the attention every one at the clinic is more than happy to give him.  </p>
+                                <p>Miu Miu came to us with a bit of an eating problem… he loves to eat! You put anything down near him and hell gobble it up like a vacuum cleaner. Having an eating addiction isn't always an easy process to fix. He's a smart cat and knows when you're not feeding him enough food! The trick to this is giving him specially formulated cat food as well as introducing more often feeding, but less amount per session.</p>
+                                <p>We haven't quite figured out what his favourite treat is. Anything put in his food bowl is consumed with the same gusto and enthusiasm.</p>
+                                <div class="button4">
+                                    <a href="images/MiuMiu.zip" download>DOWNLOAD MiuMiu Photo Pack</a> 
+                                </div>
+                                <div class="button3">
+                                    <a href="booking.html">Let your cat be one of them BOOK A VISIT</a> 
+                                </div>
+                            </section>
+                        </div>
+                    <div id="clearfloat"></div>
+
+                </div>      <!--main section-->
+            </div>
+            <footer>
+                <div id="footer_left">
+                    <p><strong>@ 2015 Catitude & Jackson Supernova</strong></p>
+                    <p>Address: 3 Zamia St Sunnybank, QLD 4109</p>
+                    <p>Phone: 07 3412 1808&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: supernova@catitude.com</p>
+                </div>
+                <div id="footer_right">
+
+                    <p>Social Network: <a href="http://facebook.com">Facebook</a> <a href="http://twitter.com">Twitter</a></p>
+                    <p>Website Last Update: 21-05-2015</p>
+                    </div>                
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!--gallery.js script offers a simple photo gallery function in Cat Profiles section. User can switch to previous or next picture by clicking left or right area. Thumbnails are also listed below the main picture, which can also interact with.-->
